@@ -1,0 +1,92 @@
+*{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+  
+}
+
+
+body{
+    background-image: url(img.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+}
+.parent-log{
+    backdrop-filter: blur(4px);
+    border: 1px solid rgb(255, 255, 255,0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 rgb(0, 0, 0);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s all ease-in-out;
+}
+.parent-log:hover{
+    backdrop-filter: blur(10px);
+}
+.child1-log,.child4-log{
+    text-align: center;
+}
+.child2-log{
+    display: flex;
+    flex-direction: column;
+}
+.child2-log input::placeholder{
+    color: white;
+}
+#userinput{
+    position: relative;
+}
+.icon1{
+    position: absolute;
+    right: 60px;
+    top: 125px;
+}
+.icon2{
+    position: absolute;
+    right: 60px;
+    top: 182px;
+}
+.child2-log input{
+     background-color: transparent;
+     border-radius: 30px;
+     padding: 10px;
+     width:18rem;
+     box-shadow: 0 0 1px 0 ;
+     border:1px solid rgb(255, 255, 255,0.1);
+
+}
+.child3-log{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-size: 15px;
+    gap: 90px;
+}
+.child3-log .child3-log-left{
+    display: flex;
+}
+.child4-log button{
+   width:17rem;
+   background-color: white;
+   color: black;
+   border-radius: 30px;
+   font-weight: bolder;
+   padding: 10px;
+}
+#logbutton:hover{
+     background-color: transparent;
+     color: white;
+     transition: 0.3s all ease-in;
+}
